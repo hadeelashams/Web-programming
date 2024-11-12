@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Square root of number</title>
+        <style>
+       body
+        {
+         background-color:#E6E6FA;
+         font-size: 20px;
+         padding:30px;
+       }
+   </style> 
+    </head>
+    <body #E6E6FA>
+        <center>
+            <h2>Square Root of a Number</h2>
+            <label for="num">Enter a number:</label>
+            <input type="number" id="num" min="1" required><br><br>
+            <button onclick="root()">Square Root</button>
+            <p id="result"></p>
+        </center>
+
+        <script>
+            function root() {
+                var num = parseFloat(document.getElementById("num").value);
+                var sqrt = num ** 0.5;
+                document.getElementById("result").textContent = "Square root: " + sqrt;
+            }
+        </script>
+    </body>
+</html>
+
