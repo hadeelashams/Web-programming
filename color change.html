@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Color changing</title>
+    <style>
+    body{
+       text-align:center;
+    }
+    button {
+     background-color: #04AA6D;
+     border-radius:12px; 
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+}
+    
+    </style>
+  </head>
+  <body>
+  <h1>Color changing button</h1>
+  <p>Click the button to change through differentbackground colors</p>
+  <button id="ChangeColorBtn" onclick="changeColor()">Change color</button>
+  
+  <script>
+   let i=0;
+   const colors=['#ffffb3',' #99e699','#ffb3b3','white'];
+   
+   function changeColor(){
+        document.body.style.backgroundColor=colors[i];
+        i=(i+1)%colors.length;
+       }
+  </script>
+  </body>
+ </html> 
