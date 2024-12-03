@@ -1,0 +1,31 @@
+<html>
+     <head>
+     <title>EventHandling</title>
+   </head>
+   <body>
+    <h1 id="txt">Sea</h1>
+   <style>
+    img{
+       width:500px;
+       height:300px;
+       transition:all 0.3s ease;
+    }
+  </style>
+  <img id="img1" onmouseover="fun1()" onmouseout="fun2()" src="flower.jpg">
+  
+  <script>
+    function fun1()
+    {
+       document.getElementById("img1").src="sea1.jpg";
+       document.getElementById("txt").innerHTML="sun set";
+    }
+    
+    function fun2()
+    {
+       document.getElementById("img1").src="sea.jpg";
+       document.getElementById("txt").innerHTML="sea";
+    }
+
+  </script>
+  </body>
+  </html>
